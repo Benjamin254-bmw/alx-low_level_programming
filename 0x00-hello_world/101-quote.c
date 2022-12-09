@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+
 /**
  * main - Print Quote
  *
@@ -10,6 +11,13 @@
 
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n," 59);
+char *str;
+int i;
+
+str = "and that piece of art is useful\" - Dora Korpa, 2015-10-19";
+for (i = 0; i < 58; i++)
+{
+	putchar(str[i]);
+	putchar('\n');
 	return (1);
 }
