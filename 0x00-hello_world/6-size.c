@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry Point for the program
- *
- * Description: prints size of various types on the computer
  *
  * Return: Always 0 (Success)
  *
  */
 
 
-int main(void);
+int main(void)
 
 
 {
