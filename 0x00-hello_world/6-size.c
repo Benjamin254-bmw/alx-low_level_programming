@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /*
- *
- * main - Entry Point
+ * main - Entry Point for the program
  *
  * Description: prints size of various types on the computer
  *
@@ -11,8 +10,8 @@
  */
 
 
+int main(void);
 
-int main(void)
 
 {
 
