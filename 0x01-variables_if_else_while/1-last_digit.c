@@ -6,7 +6,7 @@
  * main - print last digit in randon number
  *
  * Description: print last digit in random number
- * 
+ *
  * Return: Always 0 (Success)
  */
 
