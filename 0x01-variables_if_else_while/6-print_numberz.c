@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -9,16 +10,14 @@
  */
 int main(void)
 {
-	int i;
+	int num;
+	char *str = "0123456789";
 
-	i = 48;
-
-	while (i > 58)
+	for (num = 0 ; num <= 0 ; num++)
 	{
-		 putchar(i);
-		 i++;
+	 putchar(str[num]);
 	}
-	 putchar(10);
+	 putchar('\n');
 
 	return (0);
 }
