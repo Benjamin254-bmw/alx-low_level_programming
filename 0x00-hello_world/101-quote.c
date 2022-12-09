@@ -21,3 +21,4 @@ for (i = 0; i < 58; i++)
 	putchar('\n');
 	return (1);
 }
+}
