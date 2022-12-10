@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point, Prints all possible combinations of a pair of two digit numbers, without any repetition
+ * main - Prints all possible combinations of a pair of two digit numbers
  *
  * Description: numbers should range from 0 to 99
  *
