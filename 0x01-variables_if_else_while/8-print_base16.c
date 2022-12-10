@@ -1,6 +1,5 @@
 #include <stdio.h>
-/*
- **
+/**
  * main - print the letters of the alphabet
  *
  * Description: print the letters of the alphabet except e, q
@@ -15,7 +14,7 @@ int main(void)
 	{
 		if (i < 10)
 			putchar (i + '0');
-		else if (ii > 41)
+		else if (i > 41)
 			putchar (i - 10 + 'A');
 		i++;
 	}
