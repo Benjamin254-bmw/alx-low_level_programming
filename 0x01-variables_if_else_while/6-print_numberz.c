@@ -12,9 +12,10 @@ int main(void)
 {
 	int num;
 	char *str = "0123456789";
+
 	for (num = 0 ; num <= 9 ; num++)
 	{
-	 putchar(str[num]);
+		putchar(str[num]);
 	}
 	 putchar('\n');
 
