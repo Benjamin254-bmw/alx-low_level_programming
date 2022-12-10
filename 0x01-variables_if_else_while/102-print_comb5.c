@@ -1,35 +1,25 @@
 #include <stdio.h>
 /**
- * main - print pairs of double digit combos
+ * main - print the letters of the alphabet
  *
- * Description: print pairs of double digit combos
+ * Description: print the letters of the alphabet except e, q
  *
- *Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int a, b;
+	int i = 0;
 
-	for (a = 0; a <= 98; a++)
+	while (i < 48)
 	{
-		for (b = 1; b <= 99; b++)
-		{
-			if (a < b && a != b)
-			{
-				putchar((a / 10) + '0');
-				putchar((a % 10) + '0');
-				putchar(' ');
-				putchar((b / 10) + '0');
-				putchar((b % 10) + '0');
-				if (!(a == 98 && b == 99))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
+		if (I < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
+		i++;
 	}
-	putchar('\n');
-	putchar(0);
+	putchar(10);
+
+	return (0);
 }
