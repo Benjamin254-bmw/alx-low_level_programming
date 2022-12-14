@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *print_to_98 - prints all natural numbers from input to 98
@@ -22,7 +23,7 @@ void print_to_98(int n)
 		while (n > 98)
 		{
 			print("%d, ", n);
-			n--
+			n--;
 		}
 	}
 	printf("98\n");
