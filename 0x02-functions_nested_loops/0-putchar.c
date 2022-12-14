@@ -1,4 +1,5 @@
-#unclude < stdio.h >
+#include <stdio.h>
+#include "main.h"
 /**
  *main - chech the code
  *
