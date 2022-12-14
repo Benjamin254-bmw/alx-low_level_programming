@@ -19,6 +19,11 @@ void times_table(void)
 				times = (rows * columns);
 				if (columns != 0)
 				{
+					_putchar (',');
+					_putchar (' ');
+				}
+				if (times >= 100)
+				{
 
 					_putchar ((times / 10) + '0');
 					_putchar ((times % 10) + '0');
