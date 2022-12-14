@@ -1,9 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - check the code
+ * print_alphabet - print alphabet
  *
  * Return: Always 0
  */
-int main(void) {
-	print ("")
+void print_alphabet(void)
+{
+	char letter = 'a'
+		while (letter 'a' <= 'z')
+		{
+			_putchar (letter);
+			letter++;
+		}
+	_putchar('\n');
 }
