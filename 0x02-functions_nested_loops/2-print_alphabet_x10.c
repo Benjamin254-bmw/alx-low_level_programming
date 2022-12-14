@@ -6,10 +6,12 @@
  */
 void print_alphabet_x10(void)
 {
-	int round = 0;
+	int round;
 	char letter = 'a';
 
-	while (round <= 10)
+	round = 0;
+
+	while (round < 10)
 	{
 		letter = 'a';
 		while (letter <= 'z')
