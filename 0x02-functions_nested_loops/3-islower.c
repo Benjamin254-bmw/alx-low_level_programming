@@ -2,18 +2,11 @@
 /**
  *test_islower -checks for lowercase
  *
- * @c: c is an ASCII character
+ * @c: c is an ASCII character to be input
  *
  * Return:1 if lowercase. Otherwise 0
  */
-int test_islower(int c)
+int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 'a' && c <= 'z');
 }
