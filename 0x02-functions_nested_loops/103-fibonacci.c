@@ -14,11 +14,10 @@ int main(void)
 	first = 0;
 	second = 1;
 
-	while
-	(sum < 4000000);
+	while (sum < 4000000);
 	{
 		sum = first + second;
-		while (sum % 2 = 0)
+		if (sum % 2 = 0)
 		{
 			total_sum += sum;
 		}
