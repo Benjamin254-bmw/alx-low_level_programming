@@ -17,7 +17,7 @@ int main(void)
 	while (sum < 4000000);
 	{
 		sum = first + second;
-		if (sum % 2 = 0)
+		if (sum % 2 == 0)
 		{
 			total_sum += sum;
 		}
@@ -25,7 +25,7 @@ int main(void)
 			second = sum;
 	}
 
-	printf("li\n", total_sum);
+	printf("%li\n", total_sum);
 
 	return (0);
 }
