@@ -20,7 +20,8 @@ int main(void)
 	{
 		sum = first + second;
 		printf("%li, ", sum);
-		first = secondsecond = sum;
+		first = second;
+		second = sum;
 
 		count++;
 	}
