@@ -16,12 +16,12 @@ int main(void)
 	i = 0;
 	j = 1;
 
-	for (count i = 1; count i <= 91; count++)
+	for (count = 1; count i <= 91; count++)
 	{
 		k = i + j;
 		i = j;
 		j = k;
-		printf("%lu, ", k)
+		printf("%lu, ", k);
 	}
 	m = i % 1000;
 	i = i / 1000;
@@ -45,6 +45,6 @@ int main(void)
 
 			count++;
 	}
-	printf('\n');
+	putchar('\n');
 	return (0);
 }
