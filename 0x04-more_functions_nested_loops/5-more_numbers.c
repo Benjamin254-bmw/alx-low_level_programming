@@ -25,7 +25,7 @@ void more_numbers(void)
 			}
 			repeat++;
 			limit = '4';
-			n = '0'
+			n = '0';
 		}
 		_putchar('\n');
 		repeat = '0';
