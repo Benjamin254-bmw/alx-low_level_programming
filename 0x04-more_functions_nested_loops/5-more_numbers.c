@@ -9,10 +9,10 @@ void more_numbers(void)
 	int line, n, repeat, limit;
 
 	n = '0';
-	repeat = '0';
+	repeat = 0;
 	limit = '9';
 
-	for (line = '0'; line < 10; line++)
+	for (line = 0; line < 10; line++)
 	{
 		while (repeat < 2)
 		{
@@ -28,7 +28,7 @@ void more_numbers(void)
 			n = '0';
 		}
 		_putchar('\n');
-		repeat = '0';
+		repeat = 0;
 		n = '0';
 		limit = '9';
 	}
