@@ -19,7 +19,7 @@ void more_numbers(void)
 			while (n <= limit)
 			{
 				if (limit == '4')
-					_putchar(1);
+					_putchar('1');
 				_putchar(n);
 				n++;
 			}
