@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * re_string - reverses a string
+ * rev_string - reverses a string
  * @s: pounter to point to char
  *
  * Return: void
