@@ -3,33 +3,71 @@
 #include <stdlib.h>
 
 /**
- * get_op_func - finds operation function
- * @s: operator (+, -, *, /, %)
- *
- * Return: function pointer
+ * op_add - sum of two numbers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum (integer)
  */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	int i;
+	return (a + b);
+}
 
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
+/**
+ * op_sub - difference between two numbers
+ * @a: first integer
+ * @b: second integer
+ * Return: difference (integer)
+ */
 
-	i = 0;
-	while (ops[i].op != NULL)
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - product of two numbers
+ * @a: first integer
+ * @b: second integer
+ * Return: product (integer)
+ */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - quotient of two numbers
+ * @a: first integer (dividend)
+ * @b: second integer (divisor)
+ * Return: quotient (integer)
+ */
+
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
-		if (*ops[i].op == *s && s[1] == '\0')
-		{
-			return (ops[i].f);
-		}
-		i++;
+		printf("Error\n");
+		exit(100);
 	}
-	return (NULL);
+	return (a / b);
+}
+
+/**
+ * op_mod - modulo (remainder)
+ * @a: first integer (dividend)
+ * @b: second integer (divisor)
+ * Return: remainder of division (integer)
+ */
+
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a % b);
 }
