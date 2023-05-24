@@ -1,6 +1,6 @@
 CC=gcc
-SRC = main.c holberton.c
-NAME = holberton
+SRC = main.c school.c
+NAME = school
 OBJ = $(SRC:.c=.o)
 	RM = rm
 
