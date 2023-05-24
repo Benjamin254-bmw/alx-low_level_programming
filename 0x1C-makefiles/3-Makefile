@@ -1,17 +1,22 @@
-CC = gcc
-SRC = holberton.c main.c
-OBJ = $(SRC:%.c=%.o)
+CC=gcc
+SRC = main.c holberton.c
 NAME = holberton
-RM = rm
+OBJ = $(SRC:.c=.o)
+	RM = rm
+
+%.o: %.c
+		$(CC)	-c -o $@ $<
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-%.o: %.c
-	$(CC) -c $< -o $@
-clean:
-	$(RM) -f *~ $(NAME)
+		$(CC) $^ -o $(NAME)
+.PHONY: clean oclean fclean re
+	clean:
+		$(RM) -f *~ $(NAME)
+
 oclean:
-	$(RM) -f $(OBJ)
+		$(RM) -f $(OBJ)
+
 fclean: clean oclean
 
 re: oclean all
+
