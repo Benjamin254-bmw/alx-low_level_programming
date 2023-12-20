@@ -1,0 +1,7 @@
+
+a.o : a.out m.h
+	cc -c a.out
+main.o : main.c m.h
+	cc- c main.c
+school.o : school.c m.h
+	cc -c school.c
