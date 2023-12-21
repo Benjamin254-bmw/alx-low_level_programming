@@ -8,7 +8,15 @@ def adjason(up, down, left, right):
     return 4 - count
 
 def island_perimeter(grid):
-"""returns the perimeter of the island"""
+"""Return the perimiter of an island.
+
+    The grid represents water by 0 and land by 1.
+
+    Args:
+        grid (list): A list of list of integers representing an island.
+    Returns:
+        The perimeter of the island defined in grid.
+    """
    perimeter = 0
    for row in range(len(grid)):
        for j in range(len(grid[row])):
