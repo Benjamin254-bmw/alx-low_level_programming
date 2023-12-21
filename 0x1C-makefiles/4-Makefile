@@ -12,7 +12,7 @@ all: $(OBJ)
 		$(CC) $^ -o $(NAME)
 
 .PHONY: clean oclean fclean re
-	clean:
+clean:
 		$(RM) -f *~ $(NAME)
 
 oclean:
